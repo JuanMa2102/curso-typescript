@@ -1,12 +1,7 @@
-import { Hero } from './clases/Hero';
-// import * as HeroClasses from './clases/Hero';
-// import powers from './data/powers';
+import { printObject, genericFunction } from "./generics/generics";
 
-// console.log('Hola Mundo!!');
+printObject({ name: "Juanma", age: 23 });
 
-// const hero = new HeroClasses.Hero('Spiderman', 1, 25);
-// console.log(hero);
-// console.log(powers[hero.powerId - 1].desc);
-
-const ironman = new Hero('Ironman', 5, 40);
-console.log(ironman.power);
+console.log( genericFunction("Hello World").toUpperCase() );
+console.log( genericFunction(23).toFixed(2) );
+console.log( genericFunction( new Date() ).getDay() );
