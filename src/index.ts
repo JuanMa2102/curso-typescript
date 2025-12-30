@@ -1,15 +1,7 @@
-import { printObject, genericFunction } from "./generics/generics";
-import { Hero, Villain } from "./interfaces";
+import { getPokemon } from "./generics/get-pokemon";
 
-printObject({ name: "Juanma", age: 23 });
-
-// console.log( genericFunction("Hello World").toUpperCase() );
-// console.log( genericFunction(23).toFixed(2) );
-// console.log( genericFunction( new Date() ).getDay() );
-const deadpool = {
-    name: "Deadpool",
-    realName: "Wade Winston",
-    dangerLevel: 130
-};
-
-console.log( genericFunction<Villain>(deadpool).name );  
+// console.log( getPokemon() ); // getPokemon();
+getPokemon(1)
+    .then( pokemon => console.log( pokemon.sprites.front_default ) )
+    .catch( err => console.log( err ) )
+    .finally( () => console.log("Finally") );
