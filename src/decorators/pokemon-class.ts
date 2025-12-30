@@ -55,7 +55,7 @@ function readonly( isWritable: boolean = true ):Function {
 @blockPrototype
 @printToConsoleConditional( true )
 export class Pokemon {
-    @readOnly( false )
+    @readonly( true )
     public publicApi: string = 'https://pokeapi.co/';
     constructor(public id: number, public name: string) {}
 
