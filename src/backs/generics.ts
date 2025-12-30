@@ -1,5 +1,5 @@
-import { printObject, genericFunction } from "./generics/generics";
-import { Hero, Villain } from "./interfaces";
+import { printObject, genericFunction } from "./../generics/generics";
+import { Hero, Villain } from "./../interfaces";
 
 printObject({ name: "Juanma", age: 23 });
 
